@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for an internal TikTok Ads data extraction application." />
+  <style>
+    body { font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; margin: 0; }
+    main { max-width: 860px; margin: 0 auto; padding: 40px 20px; line-height: 1.6; }
+    h1 { margin: 0 0 12px; font-size: 28px; }
+    p { margin: 0 0 12px; }
+    .meta { color: #555; font-size: 14px; margin-bottom: 24px; }
+    footer { margin-top: 32px; color: #666; font-size: 14px; }
+    code { background: #f4f4f4; padding: 2px 6px; border-radius: 4px; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Privacy Policy</h1>
+    <div class="meta">Last updated: <span id="lastUpdated"></span></div>
+
+    <p>
+      This application only accesses advertising performance data (campaign, ad group, ad metrics).
+    </p>
+    <p>
+      No personal user data is collected or stored.
+    </p>
+    <p>
+      Data is used exclusively for internal analytics and reporting purposes.
+    </p>
+
+    <footer>
+      If you have questions about this policy, please contact the application owner.
+    </footer>
+  </main>
+
+  <script>
+    // Optional: auto-fill "Last updated" with today's date
+    const d = new Date();
+    const yyyy = d.getFullYear();
+    const mm = String(d.getMonth() + 1).padStart(2, "0");
+    const dd = String(d.getDate()).padStart(2, "0");
+    document.getElementById("lastUpdated").textContent = `${yyyy}-${mm}-${dd}`;
+  </script>
+</body>
+</html>
